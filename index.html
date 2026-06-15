@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acarani — Sistem Manajemen Event untuk Event Organizer Profesional</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Kelola daftar tamu, denah meja, check-in QR, hingga rundown panggung real-time dalam satu sistem. Terpasang di server Anda sendiri — data 100% milik Anda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css?v=7">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="#" class="brand"><span class="mark"><svg class="mark__svg" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5.5 19.5 12 4.5l6.5 15" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.7 14h6.6" stroke="var(--gold-light)" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="4.5" r="1.5" fill="var(--gold-light)"/></svg></span> <span class="word">Acarani</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a class="link" href="#fitur">Fitur</a>
+      <a class="link" href="#self">Self-Hosted</a>
+      <a class="link" href="#cara">Cara Kerja</a>
+      <a class="link" href="#harga">Harga</a>
+      <a class="link" href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="https://wa.me/6289695578430?text=Halo%20Acarani%2C%20saya%20ingin%20demo%20gratis%20%26%20info%20lebih%20lanjut." target="_blank" rel="noopener">Minta Demo <span class="arrow">→</span></a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="nav__backdrop" id="navBackdrop"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__mesh"><span class="m1"></span><span class="m2"></span><span class="m3"></span></div>
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <span class="eyebrow reveal">Untuk Event Organizer Profesional</span>
+      <h1 class="reveal d1">Seluruh acara Anda, dari <em>tamu</em> sampai <em>rundown</em>, dalam satu sistem.</h1>
+      <p class="lead reveal d2">Atur daftar tamu, denah meja, check-in QR, hingga rundown panggung secara real-time. Terpasang di server Anda sendiri — <strong>data 100% milik Anda.</strong></p>
+      <div class="hero__cta reveal d3">
+        <a href="https://wa.me/6289695578430?text=Halo%20Acarani%2C%20saya%20ingin%20demo%20gratis%20%26%20info%20lebih%20lanjut." target="_blank" rel="noopener" class="btn btn-primary">Minta Demo Gratis <span class="arrow">→</span></a>
+        <a href="#fitur" class="btn btn-ghost">Lihat Fitur</a>
+      </div>
+      <div class="hero__trust reveal d4">
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Tanpa langganan bulanan</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Dipasang di server Anda</span>
+        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg> Dukungan teknis penuh</span>
+      </div>
+    </div>
+    <div class="hero__art reveal d2">
+      <div class="badge">
+        <span class="dot"></span>
+        <span><b>Crew tersinkron</b><small>Rundown real-time aktif</small></span>
+      </div>
+      <div class="shot main"><img src="assets/img/03-project-view.webp" alt="Dashboard event Acarani" width="1600" height="1023" fetchpriority="high" decoding="async"></div>
+      <img class="phone" src="assets/img/12-crew-view.webp" alt="Tampilan crew di HP" width="1240" height="2116" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats">
+  <div class="wrap stats__grid">
+    <div class="stats__div"><div class="num" data-count="9">0</div><div class="lbl">Modul Terpadu</div></div>
+    <div class="stats__div"><div class="num" data-count="100" data-suffix="%">0</div><div class="lbl">Data Milik Anda</div></div>
+    <div class="stats__div"><div class="num"><span class="serif-accent">Real</span>-time</div><div class="lbl">Sinkron Antar Tim</div></div>
+    <div><div class="num" data-count="0" data-prefix="Rp ">0<span style="font-size:1.3rem">/bln</span></div><div class="lbl">Biaya Langganan</div></div>
+  </div>
+</section>
+
+<!-- ================= PROBLEM ================= -->
+<section class="section problem">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <span class="eyebrow">Masalahnya</span>
+      <h2>Mengelola event besar tanpa sistem itu <span class="serif-accent">melelahkan.</span></h2>
+    </div>
+    <div class="cards3">
+      <div class="pcard reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7.5 7 5h5l1.5 2H20a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8.5a1 1 0 0 1 1-1z"/><path d="M3 11h18"/></svg></div><h3>Data tamu berserakan</h3><p>Daftar tamu tersebar di Excel, chat WhatsApp, dan catatan kertas. Susah dicari, rawan dobel, gampang hilang.</p></div>
+      <div class="pcard reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6.5" height="6.5" rx="1.4"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.4"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.4"/><path d="M14 17h6M17 14v6"/></svg></div><h3>Atur meja serba manual</h3><p>Menggambar denah meja di kertas, bingung siapa duduk di mana, repot kalau ada perubahan mendadak.</p></div>
+      <div class="pcard reveal d3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10M4 12h7M4 18h10"/><circle cx="18" cy="15" r="3.2"/><path d="M18 13.8V15l.9.9"/></svg></div><h3>Rundown kacau di lapangan</h3><p>Crew tidak tahu acara sampai mana. Koordinasi pakai teriakan dan HT yang simpang-siur.</p></div>
+    </div>
+    <p class="problem__foot reveal">“Satu kesalahan kecil di hari-H bisa merusak reputasi yang Anda bangun bertahun-tahun.”</p>
+  </div>
+</section>
+
+<!-- ================= PILLARS ================= -->
+<section class="section">
+  <div class="orbs"><span class="o1"></span><span class="o2"></span></div>
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <span class="eyebrow">Solusinya</span>
+      <h2>Satu sistem. Semua tim. <span class="serif-accent">Satu sumber kebenaran.</span></h2>
+      <p>Acarani menyatukan admin, pagar ayu, crew, hingga klien dalam satu sistem yang sama — data selalu sinkron sepanjang acara berlangsung.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar reveal d1"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7.5 12 12l9-4.5L12 3z"/><path d="M3 12l9 4.5L21 12M3 16.5 12 21l9-4.5"/></svg></div><h3>Terpusat</h3><p>Semua data acara di satu tempat, bukan tersebar di banyak file.</p></div>
+      <div class="pillar reveal d2"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 4 14h6l-1 7 9-11h-6l1-7z"/></svg></div><h3>Real-time</h3><p>Perubahan langsung terlihat seluruh tim saat itu juga.</p></div>
+      <div class="pillar reveal d3"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 6v5c0 4.2 2.9 7.6 7 9 4.1-1.4 7-4.8 7-9V6l-7-3z"/><path d="M9.2 12l2 2 3.6-3.8"/></svg></div><h3>Milik Anda</h3><p>Terpasang di server Anda. Tidak menumpang server pihak ketiga.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="section" id="fitur" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <span class="eyebrow">Fitur Unggulan</span>
+      <h2>Semua yang Anda butuhkan untuk <span class="serif-accent">menjalankan acara.</span></h2>
+    </div>
+
+    <!-- 1 -->
+    <div class="feat reveal">
+      <div class="feat__txt">
+        <span class="feat__num">01 — Manajemen Multi-Event</span>
+        <h3>Kelola banyak acara dari satu dashboard</h3>
+        <p>Setiap event punya tamu, meja, rundown, dan timnya sendiri — rapi dan tidak pernah tercampur.</p>
+        <ul class="feat__list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Pantau status tiap acara sekilas</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Kode event unik & otomatis</li>
+        </ul>
+      </div>
+      <div class="feat__img"><span class="glow"></span><img src="assets/img/02-projects-list.webp" alt="Daftar event" width="1600" height="1023" loading="lazy" decoding="async"></div>
+    </div>
+
+    <!-- 2 -->
+    <div class="feat rev reveal">
+      <div class="feat__txt">
+        <span class="feat__num">02 — Manajemen Tamu</span>
+        <h3>Import ratusan tamu sekaligus dari Excel</h3>
+        <p>Tambah satu per satu atau import massal. Kelompokkan per kategori dan per sisi pengantin, lengkap dengan jumlah pax undangan.</p>
+        <ul class="feat__list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Import Excel sekali klik</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> QR code unik tiap tamu</li>
+        </ul>
+      </div>
+      <div class="feat__img"><span class="glow"></span><img src="assets/img/04-guests.webp" alt="Manajemen tamu" width="1600" height="1023" loading="lazy" decoding="async"></div>
+    </div>
+
+    <!-- 3 -->
+    <div class="feat reveal">
+      <div class="feat__txt">
+        <span class="feat__num">03 — Denah Meja Interaktif</span>
+        <h3>Atur posisi meja dengan drag &amp; drop</h3>
+        <p>Susun denah persis seperti venue aslinya. Tempatkan tamu ke meja, lihat kapasitas, dan cetak denah untuk tim di lapangan.</p>
+        <ul class="feat__list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Auto-save & sinkron real-time</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Status meja: kosong / sebagian / penuh</li>
+        </ul>
+      </div>
+      <div class="feat__img"><span class="glow"></span><img src="assets/img/06-floor-plan.webp" alt="Floor plan editor" width="1600" height="1023" loading="lazy" decoding="async"></div>
+    </div>
+
+    <!-- 4 -->
+    <div class="feat rev reveal">
+      <div class="feat__txt">
+        <span class="feat__num">04 — Desainer Kartu Meja</span>
+        <h3>Rancang &amp; cetak kartu tamu langsung dari sistem</h3>
+        <p>Tidak perlu desain manual satu per satu. Atur posisi field, pakai background sendiri, lalu generate massal — siap cetak.</p>
+        <ul class="feat__list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Ukuran kartu custom (mm)</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Cetak massal siap percetakan</li>
+        </ul>
+      </div>
+      <div class="feat__img"><span class="glow"></span><img src="assets/img/07-mini-card.webp" alt="Desainer kartu meja" width="1600" height="1023" loading="lazy" decoding="async"></div>
+    </div>
+
+    <!-- 5 -->
+    <div class="feat reveal">
+      <div class="feat__txt">
+        <span class="feat__num">05 — Rundown &amp; Crew Real-Time</span>
+        <h3>Seluruh crew selalu satu langkah</h3>
+        <p>Susun rundown dari template siap pakai, lalu jalankan di hari-H. Crew melihat update rundown langsung di layar mereka.</p>
+        <ul class="feat__list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Template rundown reusable</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Update tersiar real-time ke crew</li>
+        </ul>
+      </div>
+      <div class="feat__img"><span class="glow"></span><img src="assets/img/08-rundown.webp" alt="Rundown editor" width="1600" height="1023" loading="lazy" decoding="async"></div>
+    </div>
+
+    <!-- 6 -->
+    <div class="feat rev reveal">
+      <div class="feat__txt">
+        <span class="feat__num">06 — Laporan Lengkap</span>
+        <h3>Semua terekam dalam angka</h3>
+        <p>Pantau kehadiran, log check-in, rekap angpao, dan ringkasan acara. Siap dipresentasikan ke klien setelah acara selesai.</p>
+        <ul class="feat__list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Rekap kehadiran &amp; angpao</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Ringkasan event sekali lihat</li>
+        </ul>
+      </div>
+      <div class="feat__img"><span class="glow"></span><img src="assets/img/09-report-summary.webp" alt="Laporan ringkasan" width="1600" height="1023" loading="lazy" decoding="async"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ROLES ================= -->
+<section class="section roles">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <span class="eyebrow">Untuk Seluruh Tim</span>
+      <h2>Dirancang untuk <span class="serif-accent">setiap peran</span> di tim Anda.</h2>
+    </div>
+    <div class="roles__grid">
+      <article class="role reveal">
+        <span class="role__no">01</span>
+        <span class="role__ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l4 3.5L12 4l5 6.5L21 7l-1.8 11H4.8L3 7z"/><path d="M4.8 18h14.4"/></svg>
+        </span>
+        <h4>Admin / Owner</h4>
+        <p>Kontrol penuh atas semua acara, tim, dan laporan dalam satu kendali.</p>
+      </article>
+      <article class="role reveal">
+        <span class="role__no">02</span>
+        <span class="role__ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5.5A1.5 1.5 0 0 1 5.5 4H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"/><path d="M4 12h16"/></svg>
+        </span>
+        <h4>Pagar Ayu</h4>
+        <p>Scan QR untuk check-in tamu dengan cepat dan rapi langsung dari ponsel.</p>
+      </article>
+      <article class="role reveal">
+        <span class="role__no">03</span>
+        <span class="role__ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><path d="M4 13a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2zM20 13a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2 2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2z"/><path d="M18 19a4 4 0 0 1-4 3h-2"/></svg>
+        </span>
+        <h4>Crew</h4>
+        <p>Rundown real-time di layar masing-masing — tahu persis acara sampai mana.</p>
+      </article>
+      <article class="role reveal">
+        <span class="role__no">04</span>
+        <span class="role__ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="15" r="5"/><path d="M9.3 10.4 11 7h2l1.7 3.4"/></svg>
+        </span>
+        <h4>Klien</h4>
+        <p>Tampilan khusus yang elegan untuk memantau jalannya acara mereka sendiri.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SELF-HOSTED ================= -->
+<section class="section selfhost" id="self">
+  <div class="aurora"></div>
+  <div class="wrap">
+    <div class="section__head reveal">
+      <span class="eyebrow">Pembeda Utama</span>
+      <h2>Data acara Anda terlalu penting untuk <span class="serif-accent">dititipkan.</span></h2>
+      <p>Berbeda dengan aplikasi langganan biasa, Acarani dipasang langsung di server milik Anda.</p>
+    </div>
+    <div class="selfhost__grid">
+      <div class="sh-item reveal d1"><span class="chk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4>Data 100% milik Anda</h4><p>Tidak menumpang di server orang lain. Sepenuhnya dalam kendali Anda.</p></div></div>
+      <div class="sh-item reveal d2"><span class="chk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4>Tanpa langganan bulanan</h4><p>Bayar lisensi sekali, pakai selama-lamanya.</p></div></div>
+      <div class="sh-item reveal d3"><span class="chk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4>Bisa dikustomisasi</h4><p>Sesuaikan alur kerja dan brand Anda sendiri.</p></div></div>
+      <div class="sh-item reveal d4"><span class="chk"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span><div><h4>Dukungan &amp; update</h4><p>Tim kami siaga lewat kontrak support tahunan.</p></div></div>
+    </div>
+  </div>
+  <span class="selfhost__deco">A</span>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="section" id="cara">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <span class="eyebrow">Cara Kerja</span>
+      <h2>Mulai dalam <span class="serif-accent">tiga langkah.</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal d1"><h3>Konsultasi &amp; Demo</h3><p>Kami tunjukkan sistemnya dan diskusikan kebutuhan spesifik EO Anda.</p></div>
+      <div class="step reveal d2"><h3>Pemasangan</h3><p>Tim kami pasang dan setting di server Anda. Anda tinggal terima beres.</p></div>
+      <div class="step reveal d3"><h3>Pelatihan &amp; Jalan</h3><p>Kami latih tim Anda, lalu Anda siap pakai di acara berikutnya.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="section pricing" id="harga">
+  <div class="orbs"><span class="o1"></span><span class="o2"></span></div>
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <span class="eyebrow">Investasi</span>
+      <h2>Bayar sekali, <span class="serif-accent">manfaat jangka panjang.</span></h2>
+      <p>Setiap EO berbeda — paket disesuaikan dengan skala dan kebutuhan Anda.</p>
+    </div>
+    <div class="price__grid">
+      <div class="plan reveal d1">
+        <span class="tag">Inti</span>
+        <h3>Lisensi + Setup</h3>
+        <div class="price">Mulai dari <small>hubungi kami</small></div>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Pemasangan di server Anda</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Seluruh modul Acarani</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Pelatihan tim</li>
+        </ul>
+        <a href="https://wa.me/6289695578430?text=Halo%20Acarani%2C%20saya%20ingin%20minta%20penawaran%20paket%20Lisensi%20%2B%20Setup." target="_blank" rel="noopener" class="btn btn-ghost">Minta Penawaran</a>
+      </div>
+      <div class="plan feature reveal d2">
+        <span class="tag">Paling Direkomendasikan</span>
+        <h3>Lisensi + Support</h3>
+        <div class="price">Lisensi + <small>support tahunan</small></div>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Semua di paket Inti</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Update &amp; perbaikan bug</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Bantuan teknis prioritas</li>
+        </ul>
+        <a href="https://wa.me/6289695578430?text=Halo%20Acarani%2C%20saya%20ingin%20diskusi%20kebutuhan%20paket%20Lisensi%20%2B%20Support." target="_blank" rel="noopener" class="btn btn-gold">Diskusikan Kebutuhan</a>
+      </div>
+      <div class="plan reveal d3">
+        <span class="tag">Lanjutan</span>
+        <h3>Kustomisasi</h3>
+        <div class="price">Sesuai <small>kebutuhan</small></div>
+        <ul>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Fitur khusus brand Anda</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Integrasi tambahan</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Penyesuaian alur kerja</li>
+        </ul>
+        <a href="https://wa.me/6289695578430?text=Halo%20Acarani%2C%20saya%20ingin%20konsultasi%20kustomisasi%20sistem." target="_blank" rel="noopener" class="btn btn-ghost">Konsultasi</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section faq" id="faq" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="section__head center reveal">
+      <span class="eyebrow">Pertanyaan Umum</span>
+      <h2>Hal yang sering <span class="serif-accent">ditanyakan.</span></h2>
+    </div>
+    <div class="faq__list reveal">
+      <div class="qa"><button class="qa__q">Apakah saya butuh server khusus? <span class="pm">+</span></button><div class="qa__a"><p>Kami bantu siapkan. Spesifikasi server standar sudah cukup untuk menjalankan sistem.</p></div></div>
+      <div class="qa"><button class="qa__q">Apakah ada biaya bulanan? <span class="pm">+</span></button><div class="qa__a"><p>Tidak. Anda bayar lisensi sekali. Support tahunan bersifat opsional untuk update dan bantuan teknis.</p></div></div>
+      <div class="qa"><button class="qa__q">Apakah data saya aman? <span class="pm">+</span></button><div class="qa__a"><p>Data tersimpan di server Anda sendiri, sepenuhnya dalam kendali Anda — tidak menumpang server pihak ketiga.</p></div></div>
+      <div class="qa"><button class="qa__q">Berapa lama proses pemasangan? <span class="pm">+</span></button><div class="qa__a"><p>Umumnya selesai dalam hitungan hari, termasuk setup dan pelatihan tim Anda.</p></div></div>
+      <div class="qa"><button class="qa__q">Apakah bisa dikustomisasi? <span class="pm">+</span></button><div class="qa__a"><p>Bisa. Sistem dapat disesuaikan dengan alur kerja dan brand EO Anda sesuai kebutuhan.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="section final" id="demo">
+  <div class="wrap">
+    <div class="final__box reveal">
+      <div class="aurora"></div>
+      <span class="ring1"></span><span class="ring2"></span>
+      <span class="eyebrow" style="color:var(--gold-light);justify-content:center">Saatnya Mulai</span>
+      <h2>Siap membuat acara Anda berjalan <span class="serif-accent">tanpa drama?</span></h2>
+      <p>Jadwalkan demo gratis. Lihat sendiri bagaimana Acarani merapikan seluruh operasional acara Anda.</p>
+      <div class="final__cta">
+        <a href="https://wa.me/6289695578430?text=Halo%20Acarani%2C%20saya%20ingin%20demo%20gratis%20%26%20info%20lebih%20lanjut." target="_blank" rel="noopener" class="btn btn-gold">Minta Demo Gratis <span class="arrow">→</span></a>
+        <a href="https://wa.me/6289695578430?text=Halo%20Acarani%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener" class="btn btn-light">Chat WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a href="#" class="brand"><span class="mark"><svg class="mark__svg" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5.5 19.5 12 4.5l6.5 15" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.7 14h6.6" stroke="var(--gold-light)" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="4.5" r="1.5" fill="var(--gold-light)"/></svg></span> <span class="word">Acarani</span></a>
+        <p class="desc">Sistem manajemen event untuk Event Organizer profesional. Self-hosted, real-time, dan sepenuhnya milik Anda.</p>
+      </div>
+      <div><h5>Produk</h5><ul><li><a href="#fitur">Fitur</a></li><li><a href="#harga">Harga</a></li><li><a href="https://wa.me/6289695578430?text=Halo%20Acarani%2C%20saya%20ingin%20demo%20gratis%20%26%20info%20lebih%20lanjut." target="_blank" rel="noopener">Demo</a></li></ul></div>
+      <div><h5>Perusahaan</h5><ul><li><a href="#">Tentang</a></li><li><a href="#self">Self-Hosted</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h5>Kontak</h5><ul><li><a href="https://wa.me/6289695578430?text=Halo%20Acarani%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener">WhatsApp</a></li><li><a href="#">Email</a></li><li><a href="#">Instagram</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Acarani. Self-hosted event management.</span>
+      <span>Dirancang &amp; dikembangkan oleh <a href="https://byjason.dev/" target="_blank" rel="noopener" class="credit">Jason</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
