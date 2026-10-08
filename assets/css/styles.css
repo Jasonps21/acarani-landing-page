@@ -211,6 +211,25 @@ img { max-width: 100%; height: auto; display: block; }
 .pcard:hover .ic { color: var(--rose); border-color: var(--gold-light); }
 .pcard h3 { font-size: 1.3rem; margin-bottom: 10px; }
 .pcard p { color: var(--muted); font-size: .96rem; }
+.ai__sub { max-width: 640px; margin: 14px auto 0; color: var(--muted); }
+.ai__tag { display: inline-block; margin-bottom: 10px; padding: 4px 12px; border-radius: 999px; font-size: .74rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold-light); }
+.ai__help { margin-top: 56px; }
+.ai__help h3 { text-align: center; font-size: clamp(1.5rem,3vw,2rem); margin-bottom: 26px; }
+.ai__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.ai__row { display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; align-items: start; padding: 22px 24px; background: var(--ivory); border: 1px solid var(--line); border-radius: var(--r); }
+.ai__row p { margin: 0; font-size: .94rem; color: var(--muted); }
+.ai__before, .ai__after { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding-top: 3px; }
+.ai__before { color: var(--muted); }
+.ai__after { color: var(--gold); }
+.ai__after + p { color: var(--ink); font-weight: 500; }
+.ai__bullets { list-style: none; margin: 30px auto 0; padding: 0; max-width: 680px; display: grid; gap: 10px; }
+.ai__bullets li { position: relative; padding-left: 28px; color: var(--ink); }
+.ai__bullets li::before { content: "✓"; position: absolute; left: 0; color: var(--gold); font-weight: 700; }
+@media (max-width: 760px) { .ai__grid { grid-template-columns: 1fr; } }
+.ai__soon { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; margin-top: 38px; }
+.ai__soon-label { font-weight: 600; font-size: .86rem; color: var(--maroon); margin-right: 6px; }
+.ai__chip { padding: 7px 16px; border-radius: 999px; font-size: .86rem; color: var(--muted); background: var(--ivory); border: 1px dashed var(--line); }
+.ai__note { max-width: 680px; margin: 26px auto 0; text-align: center; font-size: .86rem; color: var(--muted); }
 .problem__foot { text-align: center; margin-top: 50px; font-family: 'Fraunces', serif; font-style: italic; font-size: clamp(1.2rem,2.4vw,1.7rem); color: var(--maroon); }
 
 /* ---------- pillars ---------- */
